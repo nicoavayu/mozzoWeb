@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mozzo | Gestion para restaurantes y bares</title>
+    <title>Mozzo | Sistema para restaurantes y bares</title>
     <meta
       name="description"
-      content="Mozzo conecta menu, mesas y equipo en una experiencia de gestion para restaurantes y bares con pedidos por QR, tablero admin en tiempo real y una carta siempre actualizada."
+      content="Mozzo conecta menu, mesas y operacion en una experiencia clara para restaurantes, bares y cafeterias."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +21,10 @@
     <div class="page-shell">
       <header class="topbar">
         <a class="brand" href="#inicio" aria-label="Ir al inicio de Mozzo">
-          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-mark" aria-hidden="true">
+            <span class="brand-mark-orbit"></span>
+            <span class="brand-mark-core"></span>
+          </span>
           <span class="brand-copy">
             <strong>Mozzo</strong>
             <small>Restaurant Operating System</small>
@@ -30,12 +33,11 @@
 
         <nav class="main-nav" aria-label="Navegacion principal">
           <a href="#producto">Producto</a>
-          <a href="#operacion">Operacion</a>
-          <a href="#diferencial">Diferencial</a>
+          <a href="#recorrido">Recorrido</a>
           <a href="#demo">Demo</a>
         </nav>
 
-        <a class="btn btn-primary" href="#demo">Solicitar demo</a>
+        <a class="btn btn-primary" href="#demo">Agendar demo</a>
       </header>
 
       <main>
@@ -43,386 +45,239 @@
           <div class="hero-copy reveal">
             <div class="eyebrow">
               <span class="eyebrow-dot" aria-hidden="true"></span>
-              Sistema de gestion para restaurantes, bares y cafeterias
+              Para restaurantes, bares y cafeterias
             </div>
 
-            <h1>
-              El menu vive online, la mesa pide sola y tu equipo opera con una sola vista.
-            </h1>
+            <div class="hero-brandline">
+              <span class="hero-logo" aria-hidden="true">
+                <span class="brand-mark brand-mark-large">
+                  <span class="brand-mark-orbit"></span>
+                  <span class="brand-mark-core"></span>
+                </span>
+              </span>
+              <div class="hero-brandtext">
+                <strong>Mozzo</strong>
+                <span>La operacion del salon, mas clara.</span>
+              </div>
+            </div>
+
+            <h1>Conecta la mesa, la carta y el equipo en una sola experiencia.</h1>
 
             <p class="hero-lead">
-              Mozzo convierte la carta, las mesas y el tablero del salon en un flujo continuo.
-              Menos espera para el cliente, menos friccion para el equipo y una experiencia mas
-              prolija para vender mejor.
+              Mozzo ordena el pedido desde QR, simplifica el tablero del local y mantiene la carta
+              siempre lista para vender mejor.
             </p>
 
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#demo">Quiero ver Mozzo en accion</a>
-              <a class="btn" href="#operacion">Explorar recorrido</a>
+              <a class="btn btn-primary" href="#demo">Quiero ver Mozzo</a>
+              <a class="btn" href="#recorrido">Ver recorrido</a>
             </div>
 
-            <ul class="hero-points" aria-label="Puntos clave de Mozzo">
-              <li>Pedidos por QR desde la mesa</li>
-              <li>Panel admin con estados y alertas en tiempo real</li>
-              <li>Menu versionado, editable e importable desde fotos</li>
-            </ul>
-
-            <div class="hero-strip">
-              <article class="metric-card glass-card">
-                <span class="metric-label">Superficies conectadas</span>
-                <strong class="metric-value" data-counter="2">0</strong>
-                <span class="metric-copy">cliente por mesa + tablero admin</span>
+            <div class="hero-proof-grid" aria-label="Resumen del producto">
+              <article class="proof-card">
+                <strong>QR por mesa</strong>
+                <span>El cliente pide sin descargar nada.</span>
               </article>
-
-              <article class="metric-card glass-card">
-                <span class="metric-label">Flujos que bajan la espera</span>
-                <strong class="metric-value" data-counter="4">0</strong>
-                <span class="metric-copy">menu, pedido, mozo y cuenta</span>
+              <article class="proof-card">
+                <strong>Admin en vivo</strong>
+                <span>Pedidos, alertas y estados en una sola vista.</span>
               </article>
-
-              <article class="metric-card glass-card">
-                <span class="metric-label">Carta siempre lista</span>
-                <strong class="metric-value" data-counter="1">0</strong>
-                <span class="metric-copy">publicacion viva sin reimprimir menus</span>
+              <article class="proof-card">
+                <strong>Carta editable</strong>
+                <span>Menu versionado e importable desde fotos.</span>
               </article>
             </div>
           </div>
 
           <div class="hero-visual reveal reveal-delay">
-            <div class="visual-stage">
-              <article class="dashboard-window glass-card">
-                <div class="window-top">
-                  <div class="window-dots" aria-hidden="true">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                  <div class="window-status">
-                    <span class="status-pill">Realtime activo</span>
-                    <span class="status-pill is-soft">Salon y barra conectados</span>
-                  </div>
+            <div class="hero-mockups">
+              <article class="product-panel product-panel-admin glass-card">
+                <div class="panel-role">
+                  <span class="panel-role-dot"></span>
+                  Mozzo Admin
                 </div>
 
-                <div class="window-grid">
-                  <section class="board-column">
+                <div class="panel-title-row">
+                  <div>
+                    <strong>Todo el salon en una sola vista</strong>
+                    <span>Pedidos, mesas y senales en tiempo real</span>
+                  </div>
+                  <span class="panel-badge">En vivo</span>
+                </div>
+
+                <div class="admin-board">
+                  <section class="admin-lane">
                     <header>
                       <span>Nuevos</span>
                       <strong>03</strong>
                     </header>
-                    <article class="board-card">
-                      <div>
-                        <strong>Mesa 07</strong>
-                        <small>2 burgers + 1 IPA</small>
-                      </div>
-                      <span>ahora</span>
+                    <article class="lane-card">
+                      <strong>Mesa 07</strong>
+                      <small>2 burgers + 1 IPA</small>
                     </article>
-                    <article class="board-card is-accent">
-                      <div>
-                        <strong>Mesa 14</strong>
-                        <small>picada + refill</small>
-                      </div>
-                      <span>04 min</span>
+                    <article class="lane-card lane-card-soft">
+                      <strong>Mesa 14</strong>
+                      <small>picada + refill</small>
                     </article>
                   </section>
 
-                  <section class="board-column">
+                  <section class="admin-lane">
                     <header>
                       <span>En curso</span>
                       <strong>05</strong>
                     </header>
-                    <article class="board-card">
-                      <div>
-                        <strong>Pedido 102</strong>
-                        <small>barra prioritaria</small>
-                      </div>
-                      <span>listo en 2</span>
+                    <article class="lane-card">
+                      <strong>Pedido 102</strong>
+                      <small>barra prioritaria</small>
                     </article>
-                    <article class="board-card">
-                      <div>
-                        <strong>Pedido 097</strong>
-                        <small>mesa exterior</small>
-                      </div>
-                      <span>emplatando</span>
+                    <article class="lane-card">
+                      <strong>Pedido 097</strong>
+                      <small>emplatando</small>
                     </article>
                   </section>
 
-                  <section class="board-column">
-                    <header>
-                      <span>Senales</span>
-                      <strong>02</strong>
-                    </header>
-                    <article class="board-card is-success">
-                      <div>
-                        <strong>Mesa 05</strong>
-                        <small>llamo al mozo</small>
-                      </div>
-                      <span>atender</span>
+                  <section class="admin-sidecard">
+                    <span class="sidecard-label">Alertas</span>
+                    <article class="signal-card signal-card-success">
+                      <strong>Mesa 05</strong>
+                      <small>Llamo al mozo</small>
                     </article>
-                    <article class="board-card is-warning">
-                      <div>
-                        <strong>Mesa 12</strong>
-                        <small>pidio la cuenta</small>
-                      </div>
-                      <span>cerrar</span>
+                    <article class="signal-card signal-card-warning">
+                      <strong>Mesa 12</strong>
+                      <small>Pidio la cuenta</small>
                     </article>
                   </section>
                 </div>
               </article>
 
-              <article class="phone-window glass-card">
-                <div class="phone-notch" aria-hidden="true"></div>
-                <div class="phone-head">
-                  <span class="phone-kicker">Mesa 07</span>
-                  <strong>Explorar menu</strong>
-                  <small>Hamburguesas, tapas y tragos en una sola carta</small>
+              <article class="product-panel product-panel-client glass-card">
+                <div class="panel-role panel-role-client">
+                  <span class="panel-role-dot"></span>
+                  Mozzo Mesa
                 </div>
 
-                <div class="phone-list">
-                  <article class="phone-item">
-                    <div>
-                      <strong>Smash Burger</strong>
-                      <span>doble medallon, cheddar y salsa</span>
-                    </div>
-                    <b>$12.500</b>
-                  </article>
-                  <article class="phone-item">
-                    <div>
-                      <strong>Negroni de la casa</strong>
-                      <span>listo para sumar a barra</span>
-                    </div>
-                    <b>$8.200</b>
-                  </article>
-                  <article class="phone-chip-row">
-                    <span class="status-pill is-accent">Llamar al mozo</span>
-                    <span class="status-pill is-success">Pedir la cuenta</span>
-                  </article>
-                </div>
-
-                <div class="order-dock">
-                  <div>
-                    <strong>Mi pedido</strong>
-                    <span>3 items listos para confirmar</span>
-                  </div>
-                  <button class="btn btn-primary" type="button">Confirmar</button>
-                </div>
-              </article>
-
-              <article class="floating-signal glass-card" data-live-feed>
-                <span class="floating-kicker">Actividad en vivo</span>
-                <strong data-live-title>Mesa 12</strong>
-                <p data-live-copy>Pidio la cuenta desde el QR y ya entro al tablero.</p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="ticker-band">
-          <div class="ticker-track">
-            <span>Menu vivo</span>
-            <span>Pedidos por QR</span>
-            <span>Solicitudes de mozo y cuenta</span>
-            <span>Tablero admin realtime</span>
-            <span>QRs por mesa listos para imprimir</span>
-            <span>Importacion de menu desde fotos</span>
-            <span>Historico de pedidos por snapshot</span>
-            <span>Menu vivo</span>
-            <span>Pedidos por QR</span>
-            <span>Solicitudes de mozo y cuenta</span>
-          </div>
-        </section>
-
-        <section class="section value-section" id="producto">
-          <div class="section-heading reveal">
-            <span class="section-kicker">Que resuelve Mozzo</span>
-            <h2>Una experiencia prolija para el cliente. Una operacion mucho mas clara para el local.</h2>
-            <p>
-              La venta no depende solo de cobrar rapido. Tambien depende de que la carta sea clara,
-              el pedido llegue bien y la mesa sienta que todo fluye.
-            </p>
-          </div>
-
-          <div class="value-grid">
-            <article class="value-card glass-card reveal">
-              <span class="value-index">01</span>
-              <h3>Menu siempre actualizado</h3>
-              <p>
-                Publica una nueva version de la carta sin romper el historial. Cambias items,
-                categorias o precios y la mesa ve la version correcta al instante.
-              </p>
-            </article>
-
-            <article class="value-card glass-card reveal reveal-delay">
-              <span class="value-index">02</span>
-              <h3>Pedidos sin friccion desde la mesa</h3>
-              <p>
-                El cliente escanea, recorre la carta, arma el pedido y puede llamar al mozo o
-                pedir la cuenta sin cortar el ritmo del salon.
-              </p>
-            </article>
-
-            <article class="value-card glass-card reveal reveal-delay-2">
-              <span class="value-index">03</span>
-              <h3>Tablero que ordena la operacion</h3>
-              <p>
-                Los estados, alertas y solicitudes entran en tiempo real al panel admin para que
-                el equipo actue rapido y con menos ruido.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section showcase-section" id="operacion">
-          <div class="section-heading reveal">
-            <span class="section-kicker">Operacion sincronizada</span>
-            <h2>Una misma plataforma vista desde la mesa, el salon y la carta.</h2>
-            <p>
-              Mozzo no vende una landing linda con features sueltas. Vende continuidad operativa.
-            </p>
-          </div>
-
-          <div class="showcase-shell glass-card reveal">
-            <div class="showcase-tabs" role="tablist" aria-label="Vistas del producto">
-              <button class="showcase-tab is-active" type="button" data-view="mesa" role="tab" aria-selected="true">
-                Mesa y cliente
-              </button>
-              <button class="showcase-tab" type="button" data-view="admin" role="tab" aria-selected="false">
-                Tablero admin
-              </button>
-              <button class="showcase-tab" type="button" data-view="menu" role="tab" aria-selected="false">
-                Carta e importacion
-              </button>
-            </div>
-
-            <div class="showcase-grid">
-              <div class="showcase-copy">
-                <span class="showcase-label" data-view-label>Mesa y cliente</span>
-                <h3 data-view-title>El QR deja de ser un menu pasivo y se vuelve una interfaz de servicio.</h3>
-                <p data-view-description>
-                  La experiencia de mesa mantiene la carta ordenada, el pedido visible y los pedidos
-                  de ayuda o cuenta a un toque.
-                </p>
-                <ul class="showcase-list" data-view-points>
-                  <li>Categorias claras y busqueda rapida</li>
-                  <li>Carrito, borrador y confirmacion de pedido</li>
-                  <li>Acciones directas para llamar al mozo o pedir la cuenta</li>
-                </ul>
-              </div>
-
-              <div class="showcase-preview">
-                <div class="preview-top">
-                  <span data-preview-kicker>Vista de mesa</span>
-                  <strong data-preview-title>Flujo pensado para consumir sin friccion</strong>
-                </div>
-
-                <div class="preview-stack" data-preview-cards>
-                  <article class="preview-card">
+                <div class="client-screen">
+                  <div class="client-screen-top">
+                    <span>Mesa 07</span>
                     <strong>Explorar menu</strong>
-                    <span>categorias, estados y cantidades visibles</span>
-                  </article>
-                  <article class="preview-card">
-                    <strong>Mi pedido</strong>
-                    <span>seguimiento del borrador y del pedido activo</span>
-                  </article>
-                  <article class="preview-card">
-                    <strong>Solicitudes</strong>
-                    <span>mozo y cuenta integrados a la experiencia</span>
-                  </article>
+                    <small>Pedis desde la mesa y seguis todo desde el celular.</small>
+                  </div>
+
+                  <div class="client-list">
+                    <article class="client-item">
+                      <div>
+                        <strong>Smash Burger</strong>
+                        <small>doble medallon, cheddar y salsa</small>
+                      </div>
+                      <b>$12.500</b>
+                    </article>
+                    <article class="client-item">
+                      <div>
+                        <strong>Negroni de la casa</strong>
+                        <small>listo para sumar a barra</small>
+                      </div>
+                      <b>$8.200</b>
+                    </article>
+                  </div>
+
+                  <div class="client-actions-row">
+                    <span class="status-pill">Llamar al mozo</span>
+                    <span class="status-pill is-success">Pedir la cuenta</span>
+                  </div>
+
+                  <div class="client-order">
+                    <div>
+                      <strong>Mi pedido</strong>
+                      <span>3 items listos para confirmar</span>
+                    </div>
+                    <button class="btn btn-primary" type="button">Confirmar</button>
+                  </div>
                 </div>
-              </div>
+              </article>
             </div>
           </div>
         </section>
 
-        <section class="section contrast-section" id="diferencial">
+        <section class="section image-section" id="producto">
           <div class="section-heading reveal">
-            <span class="section-kicker">Diferencial comercial</span>
-            <h2>La estetica vende, pero la claridad operativa cierra la venta.</h2>
+            <span class="section-kicker">Que hace Mozzo</span>
+            <h2>Se entiende rapido porque muestra exactamente lo que resuelve.</h2>
             <p>
-              Mozzo entra por la experiencia visual y se sostiene porque el producto resuelve el
-              momento exacto donde hoy se pierden tiempo, foco y mesas.
+              Menos discurso, mas claridad: que ve la mesa, que ve el local y como se conecta todo.
             </p>
           </div>
 
-          <div class="contrast-grid">
-            <article class="contrast-card reveal">
-              <h3>QRs por mesa listos para imprimir</h3>
-              <p>
-                Cada mesa puede tener su codigo listo para descargar, imprimir o exportar a PDF sin
-                sumar herramientas paralelas.
-              </p>
+          <div class="image-grid">
+            <article class="image-card glass-card reveal">
+              <img
+                src="./assets/scene-floor.svg"
+                alt="Mesa con codigo QR, carta digital y experiencia de pedido desde el celular."
+              />
+              <div class="image-card-copy">
+                <strong>Experiencia de mesa</strong>
+                <p>Escanear, mirar la carta, pedir y llamar al mozo desde un flujo simple.</p>
+              </div>
             </article>
 
-            <article class="contrast-card reveal reveal-delay">
-              <h3>Importacion de menu desde fotos</h3>
-              <p>
-                Si la carta vive en una foto o PDF viejo, Mozzo puede usar OCR y una revision guiada
-                para acelerar la carga del menu.
-              </p>
-            </article>
-
-            <article class="contrast-card reveal reveal-delay-2">
-              <h3>Historico renderizable del pedido</h3>
-              <p>
-                El sistema conserva snapshots de items y precios para que el historial siga siendo
-                legible aunque la carta cambie.
-              </p>
-            </article>
-          </div>
-
-          <div class="workflow-shell reveal">
-            <div class="workflow-line" aria-hidden="true"></div>
-            <article class="workflow-step">
-              <span>01</span>
-              <strong>Escanear</strong>
-              <p>La mesa entra al menu correcto sin app ni friccion.</p>
-            </article>
-            <article class="workflow-step">
-              <span>02</span>
-              <strong>Elegir</strong>
-              <p>El cliente navega, busca, arma y confirma el pedido.</p>
-            </article>
-            <article class="workflow-step">
-              <span>03</span>
-              <strong>Coordinar</strong>
-              <p>El tablero refleja estados, alertas y solicitudes en tiempo real.</p>
-            </article>
-            <article class="workflow-step">
-              <span>04</span>
-              <strong>Cerrar</strong>
-              <p>La cuenta se pide desde la mesa y el flujo termina sin desorden.</p>
+            <article class="image-card glass-card reveal reveal-delay">
+              <img
+                src="./assets/scene-control.svg"
+                alt="Tablero de administracion de Mozzo con pedidos, estados y alertas."
+              />
+              <div class="image-card-copy">
+                <strong>Operacion clara</strong>
+                <p>El equipo ve pedidos, estados y senales sin saltar entre pantallas.</p>
+              </div>
             </article>
           </div>
         </section>
 
-        <section class="section fit-section">
-          <div class="fit-layout">
-            <div class="fit-copy reveal">
-              <span class="section-kicker">Pensado para hospitalidad real</span>
-              <h2>Sirve cuando hay ritmo, ruido y muchas mesas al mismo tiempo.</h2>
-              <p>
-                Mozzo esta planteado para restaurantes, bares, cafeterias y propuestas donde la
-                experiencia del salon define si la gente vuelve o no.
-              </p>
-            </div>
+        <section class="section feature-section">
+          <div class="feature-grid">
+            <article class="feature-card glass-card reveal">
+              <span class="feature-chip">Mesa</span>
+              <h3>Pedidos por QR</h3>
+              <p>La mesa entra al menu, arma el pedido y pide asistencia sin friccion.</p>
+            </article>
 
-            <div class="fit-grid">
-              <article class="fit-card glass-card reveal">
-                <strong>Restaurantes</strong>
-                <span>Carta viva, pedidos por mesa y cuenta mas agil.</span>
-              </article>
-              <article class="fit-card glass-card reveal reveal-delay">
-                <strong>Bares y cervecerias</strong>
-                <span>Ritmo de barra, pedidos rapidos y menos idas y vueltas.</span>
-              </article>
-              <article class="fit-card glass-card reveal reveal-delay-2">
-                <strong>Cafeterias</strong>
-                <span>Experiencia directa para mesas chicas y ticket rapido.</span>
-              </article>
-              <article class="fit-card glass-card reveal">
-                <strong>Equipos chicos</strong>
-                <span>Menos carga manual y mas orden con una sola vista operativa.</span>
-              </article>
-            </div>
+            <article class="feature-card glass-card reveal reveal-delay">
+              <span class="feature-chip">Admin</span>
+              <h3>Tablero en tiempo real</h3>
+              <p>Pedidos nuevos, estados, mozo y cuenta organizados en una sola vista.</p>
+            </article>
+
+            <article class="feature-card glass-card reveal reveal-delay-2">
+              <span class="feature-chip">Carta</span>
+              <h3>Menu editable</h3>
+              <p>Publicas versiones nuevas e incluso podes importar el menu desde fotos.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section walkthrough-section" id="recorrido">
+          <div class="section-heading reveal">
+            <span class="section-kicker">Recorrido</span>
+            <h2>Tres pasos para entender el producto.</h2>
+          </div>
+
+          <div class="walkthrough-grid">
+            <article class="step-card glass-card reveal">
+              <span>01</span>
+              <h3>La mesa escanea</h3>
+              <p>Entra directo al menu correcto sin app ni espera.</p>
+            </article>
+
+            <article class="step-card glass-card reveal reveal-delay">
+              <span>02</span>
+              <h3>El pedido entra</h3>
+              <p>La orden, el mozo o la cuenta aparecen enseguida en el tablero.</p>
+            </article>
+
+            <article class="step-card glass-card reveal reveal-delay-2">
+              <span>03</span>
+              <h3>El local opera mejor</h3>
+              <p>Menos ruido, menos idas y vueltas y una experiencia mas prolija.</p>
+            </article>
           </div>
         </section>
 
@@ -430,25 +285,23 @@
           <div class="cta-shell glass-card reveal">
             <div class="cta-copy">
               <span class="section-kicker">Demo comercial</span>
-              <h2>Mostra un sistema que se siente premium desde el primer scroll.</h2>
+              <h2>Un sitio mas liviano y un producto mas facil de vender.</h2>
               <p>
-                Este sitio ya esta armado para vender Mozzo como una plataforma moderna, clara y
-                enfocada en resultados concretos dentro del salon.
+                Mozzo se presenta mejor cuando la historia es clara: la mesa pide, el local ve y la
+                operacion fluye.
               </p>
             </div>
 
             <div class="cta-panel">
-              <div class="cta-row">
-                <span>Ideal para demos con:</span>
-                <strong>restaurantes, bares, cafeterias y grupos chicos</strong>
-              </div>
-              <div class="cta-row">
-                <span>Lo que se ve:</span>
-                <strong>menu vivo, QR, pedidos, alertas y tablero realtime</strong>
+              <div class="cta-note">
+                <strong>Ideal para presentar el producto</strong>
+                <span>en reuniones comerciales, preventa o demos con restaurantes y bares.</span>
               </div>
               <div class="cta-actions">
-                <a class="btn btn-primary" href="#inicio">Volver al hero</a>
-                <a class="btn" href="#producto">Repasar funcionalidades</a>
+                <a class="btn btn-primary" href="#inicio">Volver arriba</a>
+                <a class="btn" href="https://github.com/nicoavayu/mozzoWeb" target="_blank" rel="noreferrer">
+                  Ver repositorio
+                </a>
               </div>
             </div>
           </div>
@@ -456,11 +309,22 @@
       </main>
 
       <footer class="footer">
-        <div>
-          <strong>Mozzo</strong>
-          <span>Gestion para restaurantes y bares con una estetica consistente con el producto.</span>
+        <div class="footer-brand">
+          <span class="brand-mark" aria-hidden="true">
+            <span class="brand-mark-orbit"></span>
+            <span class="brand-mark-core"></span>
+          </span>
+          <div>
+            <strong>Mozzo</strong>
+            <span>Sistema para restaurantes, bares y cafeterias.</span>
+          </div>
         </div>
-        <a href="#inicio">Subir</a>
+
+        <div class="footer-links">
+          <a href="#producto">Producto</a>
+          <a href="#recorrido">Recorrido</a>
+          <a href="#demo">Demo</a>
+        </div>
       </footer>
     </div>
   </body>
